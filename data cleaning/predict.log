@@ -1,0 +1,84 @@
+ 2023-08-04 11:29:15,752 -DEBUG - None
+ 2023-08-04 11:29:15,753 -INFO - 127.0.0.1 - - [04/Aug/2023 11:29:15] "GET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1" 200 -
+ 2023-08-04 11:30:07,941 -DEBUG - None
+ 2023-08-04 11:30:07,941 -ERROR - Exception on /appointment [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'receive_input' did not return a valid response. The function either returned None or ended without a return statement.
+ 2023-08-04 11:30:07,945 -INFO - 127.0.0.1 - - [04/Aug/2023 11:30:07] "[35m[1mGET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1[0m" 500 -
+ 2023-08-04 11:30:20,854 -DEBUG - None
+ 2023-08-04 11:30:20,854 -ERROR - Exception on /appointment [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1487, in full_dispatch_request
+    return self.finalize_request(rv)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1506, in finalize_request
+    response = self.make_response(rv)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1801, in make_response
+    raise TypeError(
+TypeError: The view function for 'receive_input' did not return a valid response. The function either returned None or ended without a return statement.
+ 2023-08-04 11:30:20,855 -INFO - 127.0.0.1 - - [04/Aug/2023 11:30:20] "[35m[1mGET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1[0m" 500 -
+ 2023-08-04 11:30:36,623 -DEBUG - None
+ 2023-08-04 11:30:36,624 -INFO - 127.0.0.1 - - [04/Aug/2023 11:30:36] "GET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1" 200 -
+ 2023-08-04 11:50:59,125 -DEBUG - None
+ 2023-08-04 11:50:59,126 -INFO - 127.0.0.1 - - [04/Aug/2023 11:50:59] "GET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1" 200 -
+ 2023-08-04 11:51:59,028 -DEBUG - None
+ 2023-08-04 11:51:59,029 -ERROR - Exception on /appointment [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\Desktop\data cleaning\app.py", line 11, in receive_input
+    return jsonify(realtime.to_dict())
+                   ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'to_dict'
+ 2023-08-04 11:51:59,032 -INFO - 127.0.0.1 - - [04/Aug/2023 11:51:59] "[35m[1mGET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1[0m" 500 -
+ 2023-08-04 11:53:41,760 -DEBUG - None
+ 2023-08-04 11:53:41,763 -ERROR - Exception on /appointment [GET]
+Traceback (most recent call last):
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\AppData\Local\Programs\Python\Python311\Lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Kamal\Desktop\data cleaning\app.py", line 11, in receive_input
+    return jsonify(realtime.to_dict)
+                   ^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'to_dict'
+ 2023-08-04 11:53:41,766 -INFO - 127.0.0.1 - - [04/Aug/2023 11:53:41] "[35m[1mGET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1[0m" 500 -
+ 2023-08-04 11:54:07,991 -DEBUG - None
+ 2023-08-04 11:54:07,991 -INFO - 127.0.0.1 - - [04/Aug/2023 11:54:07] "GET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1" 200 -
+ 2023-08-04 11:55:09,831 -DEBUG - None
+ 2023-08-04 11:55:09,832 -INFO - 127.0.0.1 - - [04/Aug/2023 11:55:09] "GET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1" 200 -
+ 2023-08-04 11:57:29,801 -DEBUG - None
+ 2023-08-04 11:57:29,802 -INFO - 127.0.0.1 - - [04/Aug/2023 11:57:29] "GET /appointment?name=Rohan&age=22&sex=male&disease=nill HTTP/1.1" 200 -
